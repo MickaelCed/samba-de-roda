@@ -9,13 +9,20 @@
   font-style: normal;
 }
 
+.main-container {
+  padding: 0px !important; 
+  margin: 0px !important; 
+  height: 100vh; 
+
+  display: flex; 
+  flex-direction: column;
+}
 
 
 #navbar1 {  
   height: 10.5%;
   overflow: hidden;
 }
-
 #navbar1-div {
   height: 100%;
 
@@ -28,7 +35,6 @@
 #navbar2 {
   height: 4.5%;
 }
-
 #navbar2-div {
   height: 100%; 
   padding: 0px;
@@ -40,6 +46,15 @@
   border-style: solid;
 }
 
+.navbaritems {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
 
 #i1 {
   padding: 0px;
@@ -62,26 +77,12 @@
   color: #bed5cf!important;
 }
 
-#navbaritems {
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-
-
-
-
 #l1 {
   align-content: center;
   image-resolution: 50px;
 }
 
-#logo {
+.logo {
   height: 100%;
 
   display:flex; 
@@ -92,14 +93,14 @@
   align-items: center;
 }
 
-#img-logo {
+.logo .img-logo {
   filter: drop-shadow(1px 1px 3px #00000094);
 
   width: 70px; 
   height: 70px;
 }
 
-#texto-logo {
+.logo .texto-logo {
   display: flex; 
   flex-direction: column;
   text-align: center; 
@@ -109,35 +110,38 @@
   height: fit-content;
 }
 
-#main-container {
+.container01 {
   width: 100%;
   max-width: 500vw;
   height: 85%;
-  overflow:scroll;
+  overflow:hidden;
 
   background-color: #546D57;
   position: relative;
   display: block;
 }
 
-#main-text {
+.main-text {
   user-select: none;
   position: relative;
   width: 85%;
-  height: min-content;
+  height: calc(fit-content + 25vh);
   justify-self: center;
   padding: 0;
   line-height: 4vh;
-  padding-top: 2vh;
+  margin-top: 2vh;
 
   text-align: center;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bolder;
   text-shadow: 2.5px 2.5px 1px rgba(0, 0, 0, 0.25);
+
+  background-color: #00000037;
+  border-radius: 10px;
 }
 
-#fundo {
+.fundo {
   user-select: none;
 
   position: absolute;
@@ -209,28 +213,39 @@
 
 /* Para telas menores que 576px (smartphones) */
 @media (max-width: 576px) {
-  #img-logo {
-    height: 12vh;
+  #navbar1 {  
+    height: 25%;
+    overflow: hidden;
+  }
+
+  #navbar2 {
+    height: 0;
+  }
+
+  .img-logo {
+    height: 11vh;
     width: 20vw;
   }
 
-  #texto-logo {
+  .texto-logo {
     font-size: 1.6rem
   }
 
-  #main-container{
+  .container01{
     height: 200%;
   }
 
-  #main-text {
+  .main-text {
     font-size: 1rem;
-
     line-height: 3.5vh;
-    padding-top: 1vh;
+
+    margin-top: 2.5vh;
   }
 
+
   #imgs {
-    height: 20vh;
+    height: 40vh;
+    width: 75vw;
   }
 }
 
