@@ -21,14 +21,17 @@
 
 #navbar1 {  
   height: 14.5%;
+  padding: 0px;
   overflow: hidden;
 }
 #navbar1-div {
   height: 100%;
+  
+  border-style: solid;
+  border-color: #000;
 
   background-image: linear-gradient(to right, #F6E0BB, #C2BCB2);
-  border: #000; 
-  border-style: solid;
+
   justify-content: center;
 }
 
@@ -45,7 +48,6 @@
   border-style: solid;
 
   align-items: center;
-  justify-content: center;
   align-content: center;
 }
 
@@ -57,9 +59,6 @@
   padding: 0px;
   margin: 0px;
   list-style: none;
-
-  align-self: center;
-  justify-self: center;
 
   justify-content: space-evenly;
   align-items: center;
@@ -82,12 +81,6 @@
 }
 .nav-link:hover {
   color: #dbeddd !important;
-}
-
-
-#l1 {
-  align-content: center;
-  image-resolution: 50px;
 }
 
 .logo {
@@ -130,20 +123,24 @@
 }
 
 .main-text {
-  user-select: none;
-  position: relative;
   width: 85%;
-  height: calc(fit-content + 25vh);
+  height: fit-content;
+
   justify-self: center;
+
   padding: 0;
-  line-height: 4vh;
   margin-top: 2vh;
 
-  text-align: center;
   color: #ffffff;
   font-size: 4vh;
+  line-height: 4vh;
   font-weight: bolder;
+  text-align: center;
   text-shadow: 2.5px 2.5px 1px rgba(0, 0, 0, 0.25);
+
+
+  user-select: none;
+  position: relative;
 
   background-color: #00000037;
   border-radius: 10px;
@@ -215,7 +212,11 @@
   border-radius: 20px;
 }
 
-#footer {
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   display: flex;
   height: 5.5vh;
 
