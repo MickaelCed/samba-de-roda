@@ -20,7 +20,7 @@
 
 
 #navbar1 {  
-  height: 10.5%;
+  height: 14.5%;
   overflow: hidden;
 }
 #navbar1-div {
@@ -34,10 +34,8 @@
 
 #navbar2 {
   height: 4.5%;
-}
-#navbar2-div {
 
-  height: 100%; 
+  height: 5%; 
   padding: 0px;
   margin: 0px;
 
@@ -45,40 +43,44 @@
   border: #000; 
   border-top: 0px ; 
   border-style: solid;
-  
+
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-#navbar-items {
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+
   height: 100%;
   padding: 0px;
   margin: 0px;
+  list-style: none;
 
-  
-  align-content: center!important;
-  align-items: center!important;
-  justify-content: center;
+  align-self: center;
+  justify-self: center;
+
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#i1 {
+.nav-link {
   padding: 0px;
   font-size: 1.3rem;
 
   height: 90%;
-  width: 15vw;
+  width: fit-content;
   user-select: none;
   
   color: black!important;
 
   text-align: center;
 
-  margin-right: 2.5vw;
-
   transition: color 0.3s ease;
   filter: drop-shadow(1px 1px 2px #000000cc);
 }
-#i1:hover {
-  color: #bed5cf!important;
-}
+
 
 #l1 {
   align-content: center;
@@ -136,7 +138,7 @@
 
   text-align: center;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 4vh;
   font-weight: bolder;
   text-shadow: 2.5px 2.5px 1px rgba(0, 0, 0, 0.25);
 
@@ -181,7 +183,6 @@
 }
 .slider-link, a:link, a:visited{
   text-decoration: none!important;
-  color: #fff!important;
 }
 
 .slider-texto {
@@ -217,12 +218,15 @@
 /* Para telas menores que 576px (smartphones) */
 @media (max-width: 576px) {
   #navbar1 {  
-    height: 25%;
+    height: 30%;
     overflow: hidden;
   }
 
   #navbar2 {
-    height: 0;
+    height: 5.5%;
+  }
+  .nav-link {
+    font-size: 1rem;
   }
 
   .img-logo {
@@ -238,6 +242,12 @@
     height: 200%;
   }
 
+  .fundo {
+    width: 400%;
+
+    left: -35%;
+  }
+
   .main-text {
     font-size: 1rem;
     line-height: 3.5vh;
@@ -245,10 +255,9 @@
     margin-top: 2.5vh;
   }
 
-
   #imgs {
-    height: 40vh;
-    width: 75vw;
+    height: 33.3vh;
+    width: 70vw;
   }
 }
 
