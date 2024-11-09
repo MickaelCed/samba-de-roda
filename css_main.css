@@ -80,6 +80,9 @@
   transition: color 0.3s ease;
   filter: drop-shadow(1px 1px 2px #000000cc);
 }
+.nav-link:hover {
+  color: #dbeddd !important;
+}
 
 
 #l1 {
@@ -191,7 +194,7 @@
 
 
 #imgs {
-  aspect-ratio: 16 / 9;
+  height: 50vh;
   border-radius: 10px;
 
   cursor: pointer;
@@ -212,21 +215,44 @@
   border-radius: 20px;
 }
 
+#footer {
+  display: flex;
+  height: 5.5vh;
+
+  justify-content: center;
+  align-content: center;
+
+  border-style: solid;
+  border-color: #000;
+  border-bottom: 0;
+
+  background-image: linear-gradient(to left, #F6e0bb, #c2bcb2); 
+}
+.unex-logo {
+  filter: drop-shadow(1px 1px 1px #000000cc);
+  width: 4vw;
+}
 
 /* Responsividade */
+
+@media (max-width: 840px) {
+  .main-text {
+    font-size: 1rem;
+  }
+}
 
 /* Para telas menores que 576px (smartphones) */
 @media (max-width: 576px) {
   #navbar1 {  
-    height: 30%;
+    height: 25%;
     overflow: hidden;
   }
 
   #navbar2 {
-    height: 5.5%;
+    height: 7.5%;
   }
   .nav-link {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .img-logo {
@@ -257,7 +283,11 @@
 
   #imgs {
     height: 33.3vh;
-    width: 70vw;
+    width: 76vw;
+  }
+
+  .unex-logo {
+    width: 10vw;
   }
 }
 
