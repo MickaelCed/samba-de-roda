@@ -87,7 +87,7 @@
   height: 100%;
 
   display:flex; 
-  user-select: none;
+
 
   padding-left: 10px;
   text-shadow: 1px 1px 3px #0000007b;
@@ -104,7 +104,9 @@
 .logo .texto-logo {
   display: flex; 
   flex-direction: column;
+  color: inherit;
   text-align: center; 
+  text-decoration: none!important;
  
   font-size:2rem; 
   justify-content: center;
@@ -117,7 +119,12 @@
   height: 85%;
   overflow:hidden;
 
-  background-color: #546D57;
+  display: flex!important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  background-image: linear-gradient(90deg, rgba(66,79,68,1) 0%, rgba(109,133,105,1) 33%, rgba(84,109,87,1) 100%);
   position: relative;
   display: block;
 }
@@ -130,9 +137,10 @@
 
   padding: 0;
   margin-top: 2vh;
+  margin-bottom: 2vh;
 
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 1.5rem;
   line-height: 4vh;
   font-weight: bolder;
   text-align: center;
@@ -236,12 +244,6 @@
 
 /* Responsividade */
 
-@media (max-width: 840px) {
-  .main-text {
-    font-size: 1rem;
-  }
-}
-
 /* Para telas menores que 576px (smartphones) */
 @media (max-width: 576px) {
   #navbar1 {  
@@ -276,15 +278,19 @@
   }
 
   .main-text {
-    font-size: 1rem;
+    font-size: 1vw;
     line-height: 3.5vh;
 
     margin-top: 2.5vh;
   }
 
   #imgs {
-    height: 33.3vh;
-    width: 76vw;
+    height: 50vw;
+    width: 70vw;
+  }
+
+  .footer{
+    height: 3vh;
   }
 
   .unex-logo {
@@ -292,7 +298,11 @@
   }
 }
 
-
+@media (max-width: 992px) {
+  .main-text {
+    font-size: 1rem;
+  }
+}
 
 
 @keyframes aparecer {

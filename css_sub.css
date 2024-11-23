@@ -1,0 +1,21 @@
+.container01 {
+    overflow: scroll;
+}
+#imgs {
+    margin-bottom: 2vh;
+    user-select: none;
+    cursor: default;
+}
+#link {
+    color: aqua !important;
+}
+h1 {
+    margin-bottom: 2vh;
+}
+iframe {
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 2px #000000cc);
+}
+li {
+    list-style-type: none;
+}
