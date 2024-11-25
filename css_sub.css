@@ -1,5 +1,6 @@
 .container01 {
     overflow: scroll;
+    padding-bottom: 8vh;
 }
 #imgs {
     margin-bottom: 2vh;
